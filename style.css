@@ -1,16 +1,14 @@
-@import "tailwindcss";
-
 @font-face {
   font-family: "Alistair";
-  src: url('./fonts/alistair-signature.otf') format('opentype');
+  src: url('./fonts/alistair-signature.otf?v=20260823') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Stolzl";
-  src: url('./fonts/stolzl-regular.ttf') format('truetype');
-  font-weight: 100 900;
+  src: url('./fonts/stolzl-regular.ttf?v=20260823') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -18,8 +16,9 @@
 :root { --ink:#15304a; --blue:#a9c9e2; --deep:#2d5d83; --paper:#f3efe7; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin:0; color:var(--ink); background:#e6dfd3; font-family:"Stolzl",sans-serif; }
+body { margin:0; color:var(--ink); background:#e6dfd3; font-family:"Stolzl",Arial,sans-serif; font-weight:400; }
 button,a { font:inherit; }
+em { font-family:"Alistair",cursive; font-style:normal; font-weight:400; }
 
 .intro { min-height:100svh; display:grid; place-items:center; align-content:center; gap:24px; overflow:hidden; position:relative; padding:36px 20px; background:radial-gradient(circle at 50% 42%,#f8f4ec 0,#e9e1d5 52%,#d8cbbc 100%); transition:min-height .8s ease; }
 .intro:before { content:""; position:absolute; inset:0; opacity:.22; pointer-events:none; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E"); }
